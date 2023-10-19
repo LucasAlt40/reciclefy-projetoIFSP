@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RecicleFy</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="assets/logo.png" alt="RecicleFy" />
+        <h1>Recicle<span>Fy</span></h1>
+      </div>
+
+      <nav>
+        <div class="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#coleta">Locais de Coleta</a></li>
+            <li><a href="#contato">Entre em contato</a></li>
+            <li><a href="#feedbacks">Feedbacks</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="inicio">
+        <div class="content">
+          <h2>Recicle<span>Fy</span></h2>
+          <p>
+            O RecicleFy é um site que tem como objetivo ajudar as pessoas a
+            encontrarem locais de coleta de lixo reciclável.
+          </p>
+          <a href="#coleta"><button>Encontrar Local</button></a>
+        </div>
+      </section>
+
+      <section id="sobre">
+        <div class="content">
+          <h2>Sobre</h2>
+          <p>
+            Bem-vindo ao RecicleFy, uma plataforma dedicada a promover a
+            sustentabilidade e a preservação do meio ambiente. Nosso objetivo é
+            fornecer a você uma maneira fácil e eficaz de encontrar locais de
+            coleta de lixo reciclável em sua região, ao mesmo tempo em que
+            permite que você contribua para o crescimento dessa comunidade
+            comprometida com o planeta.
+          </p>
+
+          <div class="reasons">
+            <h3>Porque usar o RecicleFy?</h3>
+            <div class="box-reasons">
+              <div class="reason">
+                <h4>Preservação Ambiental</h4>
+                <p>
+                  Utilizar o RecicleFy é um passo significativo em direção à
+                  preservação ambiental. Sua contribuição ajuda a reduzir
+                  resíduos prejudiciais ao meio ambiente, como plásticos e
+                  produtos químicos, e contribui para a proteção da
+                  biodiversidade e da qualidade da água e do solo.
+                </p>
+              </div>
+              <div class="reason">
+                <h4>Facilidade de Reciclagem:</h4>
+                <p>
+                  Com o RecicleFy, a reciclagem se torna uma tarefa simples e
+                  conveniente. Você pode localizar os pontos de coleta mais
+                  próximos, garantindo que seus materiais recicláveis sejam
+                  direcionados de maneira adequada, promovendo assim a
+                  reciclagem eficaz e a redução de resíduos não recicláveis.
+                </p>
+              </div>
+              <div class="reason">
+                <h4>Comunidade Sustentável</h4>
+                <p>
+                  Ao fazer parte da comunidade do RecicleFy, você se conecta a
+                  pessoas e organizações que compartilham seus valores
+                  ambientais. Essa rede sustentável não apenas oferece suporte e
+                  informações valiosas sobre práticas ecológicas, mas também
+                  oferece oportunidades para trabalhar em conjunto na ampliação
+                  da infraestrutura de coleta e na conscientização sobre a
+                  importância da reciclagem. Dessa forma, você não apenas
+                  contribui individualmente, mas também desempenha um papel
+                  ativo na construção de um mundo mais sustentável.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="coleta">
+        <div class="content">
+          <h2>Locais de Coleta</h2>
+          <p>
+            Encontre o local de coleta mais perto de você e ajude o meio
+            ambiente!
+          </p>
+          <div class="locations-container">
+            <div class="filter-inputs">
+              <div class="inputs">
+                <input
+                  type="text"
+                  placeholder="Digite o nome do local"
+                  id="busca-ponto"
+                  value=""
+                />
+                <select name="type" id="type">
+                  <option value="all">Todos</option>
+                  <option value="plastico">Plástico</option>
+                  <option value="papel">Papel</option>
+                  <option value="vidro">Vidro</option>
+                  <option value="metal">Metal</option>
+                  <option value="organico">Orgânico</option>
+                </select>
+                <select name="cities" id="cities">
+                  <option value="all">Todas as cidades</option>
+                  <option value="araraquara">Araraquara</option>
+                  <option value="sao-paulo">São Paulo</option>
+                  <option value="matao">Matão</option>
+                  <option value="americo">Américo</option>
+                  <option value="osasco">Osasco</option>
+                  <option value="ibate">Ibaté</option>
+                  <option value="ribeirao-preto">Ribeirão Preto</option>
+                </select>
+              </div>
+              <button id="filter-button">Filtrar</button>
+            </div>
+            <div class="card-locations-container"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="feedbacks">
+        <div class="content">
+          <h2>Feedbacks</h2>
+          <p>
+            Veja o que as pessoas estão falando sobre o RecicleFy e como elas
+            estão ajudando o meio ambiente!
+          </p>
+
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="feedback">
+                  <div class="feedback-header">
+                    <img src="assets/perfil.jpg" alt="Foto do usuário" />
+                    <div class="feedback-header-info">
+                      <h3>Diana Prince</h3>
+                      <p>Araraquara</p>
+                    </div>
+                  </div>
+                  <div class="feedback-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Eos similique tempora obcaecati omnis, nisi explicabo
+                      dignissimos dolorum, commodi ipsum porro quasi molestias
+                      cumque ea! Optio dicta reprehenderit animi rem dolore.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="feedback">
+                  <div class="feedback-header">
+                    <img src="assets/perfil2.jpg" alt="Foto do usuário" />
+                    <div class="feedback-header-info">
+                      <h3>Bruce Wayne</h3>
+                      <p>Araraquara</p>
+                    </div>
+                  </div>
+                  <div class="feedback-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Eos similique tempora obcaecati omnis, nisi explicabo
+                      dignissimos dolorum, commodi ipsum porro quasi molestias
+                      cumque ea! Optio dicta reprehenderit animi rem dolore.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="feedback">
+                  <div class="feedback-header">
+                    <img src="assets/perfil3.jpg" alt="Foto do usuário" />
+                    <div class="feedback-header-info">
+                      <h3>Han Solo</h3>
+                      <p>Araraquara</p>
+                    </div>
+                  </div>
+                  <div class="feedback-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Eos similique tempora obcaecati omnis, nisi explicabo
+                      dignissimos dolorum, commodi ipsum porro quasi molestias
+                      cumque ea! Optio dicta reprehenderit animi rem dolore.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato">
+        <div class="content">
+          <h2>Entre em contato</h2>
+          <p>
+            Não encontrou o que procurava? Entre em contato conosco e nos ajude
+            a melhorar!
+          </p>
+          <form>
+            <div class="form-group">
+              <label for="name" class="name"
+                >Nome <span class="error-message"></span
+              ></label>
+              <input type="text" name="name" id="name" />
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="email"
+                >E-mail <span class="error-message"></span
+              ></label>
+              <input type="text" name="email" id="email" />
+            </div>
+
+            <div class="form-group">
+              <label for="zip-code" class="zip-code"
+                >CEP <span class="error-message"></span
+              ></label>
+              <input type="text" name="zip-code" id="zip-code" />
+            </div>
+
+            <div class="form-group">
+              <label for="street">Rua</label>
+              <input type="text" name="street" id="street" />
+            </div>
+            <div class="form-group">
+              <label for="city">Cidade</label>
+              <input type="text" name="city" id="city" />
+            </div>
+            <div class="form-group">
+              <label for="district">Bairro</label>
+              <input type="text" name="district" id="district" />
+            </div>
+            <div class="form-group">
+              <label for="state">Estado</label>
+              <input type="text" name="state" id="state" />
+            </div>
+            <div class="form-group">
+              <label for="message">Mensagem</label>
+              <textarea name="message" id="message"></textarea>
+            </div>
+            <button>Enviar</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>RecicleFy &copy; 2020</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script type="module">
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs"
+      const swiper = new Swiper(".swiper", {
+        direction: "horizontal",
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      })
+    </script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
