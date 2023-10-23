@@ -350,7 +350,7 @@ main section {
 #coleta .card-location {
   background-color: white;
   width: 350px;
-  height: 350px;
+  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -812,4 +812,88 @@ main section {
   color: red;
   font-size: 10px;
   font-weight: 500;
+}
+
+dialog {
+  width: 80%;
+  height: 60%;
+  margin: auto;
+  background-color: var(--color-1);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 8px;
+  border: 2px solid var(--color-6);
+  padding: 1rem;
+}
+
+dialog h3 {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--color-6);
+  margin-bottom: 1rem;
+}
+
+dialog p {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+dialog p a {
+  color: var(--color-6);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+dialog button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-6);
+  color: var(--color-1);
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+dialog button:hover {
+  background-color: var(--color-7);
+}
+
+dialog .modal-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.modal-content #modal-location-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 66px;
+}
+
+dialog #modal-location-description {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+dialog .container-icons {
+  display: flex;
+  align-items: center;
+}
+
+dialog .container-icons svg {
+  margin: 0 1rem;
 }

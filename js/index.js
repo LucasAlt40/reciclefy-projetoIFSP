@@ -1,159 +1,176 @@
 const locations = [
   {
-    imageSrc: "assets/locations/1.jpg",
-    title: "Local de Coleta 1",
-    description: "Um ponto de coleta próximo ao parque da cidade.",
+    imageSrc: "assets/locations/recycle.png",
+    title: "Centro de Reciclagem São Paulo",
+    description: "Aceitamos plásticos, vidros e metais para reciclagem.",
     location: "São Paulo",
     trashType: "Plástico",
   },
   {
-    imageSrc: "assets/locations/1.jpg",
-    title: "Local de Coleta 2",
-    description: "Um local conveniente para reciclar plásticos e vidros.",
+    imageSrc: "assets/locations/recycle.png",
+    title: "Coleta de Metal São Paulo",
+    description: "Recicle Metais antigos e evite o descarte inadequado.",
     location: "São Paulo",
-    trashType: "Plástico",
-  },
-  {
-    imageSrc: "assets/locations/1.jpg",
-    title: "Local de Coleta 3",
-    description: "Recicle eletrônicos antigos e evite o descarte inadequado.",
-    location: "Matão",
     trashType: "Metal",
   },
   {
-    imageSrc: "assets/locations/1.jpg",
-    title: "Local de Coleta 4",
+    imageSrc: "assets/locations/recycle.png",
+    title: "Posto de Coleta de Orgânico Matão",
     description:
-      "Ajude a preservar a natureza reciclando seu óleo de cozinha usado.",
-    location: "Américo",
+      "Recicle seu Orgânico usado e ajude a preservar o meio ambiente.",
+    location: "Matão",
     trashType: "Orgânico",
   },
   {
-    imageSrc: "assets/locations/1.jpg",
-    title: "Local de Coleta 5",
-    description:
-      "Contribua para a reciclagem de papel e contribua para a sustentabilidade.",
-    location: "Osasco",
+    imageSrc: "assets/locations/recycle.png",
+    title: "Reciclagem de Papel Américo",
+    description: "Contribua para a reciclagem de papel e a sustentabilidade.",
+    location: "Américo",
     trashType: "Papel",
   },
   {
-    imageSrc: "assets/locations/1.jpg",
-    title: "Local de Coleta 6",
-    description:
-      "Recicle seu vidro para economizar recursos naturais e reduzir a poluição.",
-    location: "Ibaté",
+    imageSrc: "assets/locations/recycle.png",
+    title: "Coleta de Vidro Osasco",
+    description: "Recicle vidro para economizar recursos naturais.",
+    location: "Osasco",
     trashType: "Vidro",
   },
   {
-    imageSrc: "assets/locations/1.jpg",
-    title: "Local de Coleta 7",
-    description:
-      "Uma oportunidade de reciclar resíduos orgânicos e produzir composto.",
-    location: "Ribeirão Preto",
-    trashType: "Orgânico",
+    imageSrc: "assets/locations/recycle.png",
+    title: "Reciclagem de Orgânicos Ibaté",
+    description: "Recicle resíduos orgânicos e produza composto orgânico.",
+    location: "Ibaté",
+    trashType: "Orgânicos",
   },
   {
-    imageSrc: "assets/locations/1.jpg",
-    title: "Local de Coleta 8",
-    description: "Reciclagem de plástico em São Paulo.",
-    location: "São Paulo",
+    imageSrc: "assets/locations/recycle.png",
+    title: "Ponto de Reciclagem Ribeirão Preto",
+    description: "Recicle metais e reduza a poluição ambiental.",
+    location: "Ribeirão Preto",
+    trashType: "Metais",
+  },
+  {
+    imageSrc: "assets/locations/recycle.png",
+    title: "Centro de Coleta de Plástico Ribeirão Preto",
+    description: "Ajude a reciclar plásticos e reduzir o desperdício.",
+    location: "Ribeirão Preto",
     trashType: "Plástico",
   },
   {
-    imageSrc: "assets/locations/1.jpg",
-    title: "Local de Coleta 9",
-    description: "Reciclagem de vidro em São Paulo.",
-    location: "São Paulo",
-    trashType: "Vidro",
-  },
-  {
-    imageSrc: "assets/locations/1.jpg",
-    title: "Local de Coleta 10",
-    description: "Reciclagem de papel em Matão.",
-    location: "Matão",
-    trashType: "Papel",
-  },
-  {
-    imageSrc: "assets/locations/1.jpg",
-    title: "Local de Coleta 11",
-    description: "Reciclagem de papel em Matão.",
-    location: "Matão",
-    trashType: "Papel",
-  },
-  {
-    imageSrc: "assets/locations/1.jpg",
-    title: "Local de Coleta 12",
-    description: "Reciclagem de óleo de cozinha em Américo.",
-    location: "Américo",
-    trashType: "Orgânico",
-  },
-  {
-    imageSrc: "assets/locations/1.jpg",
-    title: "Local de Coleta 13",
-    description: "Reciclagem de orgânicos em Américo.",
-    location: "Américo",
-    trashType: "Orgânico",
-  },
-  {
-    imageSrc: "assets/locations/1.jpg",
-    title: "Local de Coleta 14",
-    description: "Reciclagem de metais em Osasco.",
-    location: "Osasco",
-    trashType: "Metal",
-  },
-  {
-    imageSrc: "assets/locations/1.jpg",
-    title: "Local de Coleta 15",
-    description: "Reciclagem de vidro em Osasco.",
-    location: "Osasco",
-    trashType: "Vidro",
-  },
-  {
-    imageSrc: "assets/locations/1.jpg",
-    title: "Local de Coleta 16",
-    description: "Reciclagem de vidro em Ibaté.",
-    location: "Ibaté",
-    trashType: "Vidro",
-  },
-  {
-    imageSrc: "assets/locations/1.jpg",
-    title: "Local de Coleta 17",
-    description: "Reciclagem de plástico em Ibaté.",
-    location: "Ibaté",
-    trashType: "Plástico",
-  },
-  {
-    imageSrc: "assets/locations/1.jpg",
-    title: "Local de Coleta 18",
-    description: "Reciclagem de orgânicos em Ribeirão Preto.",
-    location: "Ribeirão Preto",
-    trashType: "Orgânico",
-  },
-  {
-    imageSrc: "assets/locations/1.jpg",
-    title: "Local de Coleta 19",
-    description: "Reciclagem de papel em Ribeirão Preto.",
-    location: "Ribeirão Preto",
-    trashType: "Papel",
-  },
-  {
-    imageSrc: "assets/locations/1.jpg",
-    title: "Local de Coleta 20",
-    description: "Reciclagem de vidro em Araraquara.",
+    imageSrc: "assets/locations/recycle.png",
+    title: "Posto de Reciclagem de Vidro Araraquara",
+    description: "Recicle vidro para conservar recursos naturais.",
     location: "Araraquara",
     trashType: "Vidro",
   },
   {
-    imageSrc: "assets/locations/1.jpg",
-    title: "Local de Coleta 21",
-    description: "Reciclagem de papel em Araraquara.",
+    imageSrc: "assets/locations/recycle.png",
+    title: "Reciclagem de Papel Araraquara",
+    description:
+      "Contribua para a reciclagem de papel e a sustentabilidade ambiental.",
     location: "Araraquara",
     trashType: "Papel",
+  },
+  {
+    imageSrc: "assets/locations/recycle.png",
+    title: "Coleta de Metal Ribeirão Preto",
+    description: "Recicle seus Metal antigos de forma segura.",
+    location: "Ribeirão Preto",
+    trashType: "Metal",
+  },
+  {
+    imageSrc: "assets/locations/recycle.png",
+    title: "Reciclagem de Plástico Osasco",
+    description: "Contribua para a reciclagem de plásticos em Osasco.",
+    location: "Osasco",
+    trashType: "Plástico",
+  },
+  {
+    imageSrc: "assets/locations/recycle.png",
+    title: "Ponto de Coleta de Papel São Paulo",
+    description: "Recicle papel e ajude a preservar as árvores.",
+    location: "São Paulo",
+    trashType: "Papel",
+  },
+  {
+    imageSrc: "assets/locations/recycle.png",
+    title: "Reciclagem de Vidro Matão",
+    description: "Faça a diferença reciclando vidro em Matão.",
+    location: "Matão",
+    trashType: "Vidro",
+  },
+  {
+    imageSrc: "assets/locations/recycle.png",
+    title: "Posto de Coleta de Orgânico Araraquara",
+    description: "Recicle Orgânico e proteja o meio ambiente.",
+    location: "Araraquara",
+    trashType: "Orgânico",
+  },
+  {
+    imageSrc: "assets/locations/recycle.png",
+    title: "Reciclagem de Orgânicos São Paulo",
+    description: "Recicle resíduos orgânicos e produza adubo natural.",
+    location: "São Paulo",
+    trashType: "Orgânicos",
+  },
+  {
+    imageSrc: "assets/locations/recycle.png",
+    title: "Coleta de Metais Ibaté",
+    description: "Recicle metais e economize recursos naturais.",
+    location: "Ibaté",
+    trashType: "Metais",
+  },
+  {
+    imageSrc: "assets/locations/recycle.png",
+    title: "Centro de Reciclagem de Plástico Américo",
+    description: "Recicle plásticos e ajude a reduzir a poluição.",
+    location: "Américo",
+    trashType: "Plástico",
+  },
+  {
+    imageSrc: "assets/locations/recycle.png",
+    title: "Posto de Reciclagem de Vidro Ribeirão Preto",
+    description: "Recicle vidro de forma responsável em Ribeirão Preto.",
+    location: "Ribeirão Preto",
+    trashType: "Vidro",
+  },
+  {
+    imageSrc: "assets/locations/recycle.png",
+    title: "Reciclagem de Papel Matão",
+    description: "Ajude a reciclar papel em Matão e proteger o meio ambiente.",
+    location: "Matão",
+    trashType: "Papel",
+  },
+  {
+    imageSrc: "assets/locations/recycle.png",
+    title: "Coleta de Metal Osasco",
+    description:
+      "Recicle seus Metal em Osasco e reduza o desperdício eletrônico.",
+    location: "Osasco",
+    trashType: "Metal",
   },
 ]
 
+function formatarPalavra(palavra) {
+  palavra = palavra.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+  palavra = palavra.replace(/\s+/g, "-").toLowerCase()
+
+  return palavra
+}
+
+const cep = document.querySelector(`#zip-code`)
+const city = document.querySelector(`#city`)
+const state = document.querySelector(`#state`)
+const district = document.querySelector(`#district`)
+const street = document.querySelector(`#street`)
+
+const input = document.querySelector("#busca-ponto")
+const buttonFilter = document.querySelector("#filter-button")
+
+const modal = document.getElementById("modal-error")
+const fecharModalBtn = document.getElementById("fecharModal")
+
 const renderLocationCars = () => {
-  /* 1 function jquery */
   const locationCards = $(".card-locations-container")
 
   locations.forEach((location) => {
@@ -172,6 +189,7 @@ const renderLocationCars = () => {
 
     const cardText = document.createElement("p")
     cardText.textContent = location.description
+    cardText.classList.add("card-description")
 
     const cardFooter = document.createElement("div")
     cardFooter.classList.add("card-location-info-footer")
@@ -225,39 +243,79 @@ const renderLocationCars = () => {
   })
 }
 
-window.addEventListener("load", renderLocationCars)
-
-const input = document.querySelector("#busca-ponto")
-const buttonFilter = document.querySelector("#filter-button")
-const cidade = document.querySelector("#city")
-const tipo = document.querySelector("#type")
-
-input.addEventListener("keyup", () => {
-  const cards = document.querySelectorAll(".card-location")
-  const inputValue = input.value.toLowerCase()
-  cards.forEach((card) => {
-    const cardTitle = card
-      .querySelector(".card-title")
-      .textContent.toLocaleLowerCase()
-    if (cardTitle.includes(inputValue)) {
-      card.style.display = "flex"
-    } else {
-      card.style.display = "none"
+const aplicaFuncoesJquery = () => {
+  $("a").on("click", function (e) {
+    if (this.hash !== "") {
+      e.preventDefault()
+      var hash = this.hash
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top,
+        },
+        800
+      )
     }
   })
-})
+  $(".card-location").hover(
+    function () {
+      $(this).css("box-shadow", "3px 3px 5px #888888")
+      $(this).css("cursor", "pointer")
+    },
+    function () {
+      $(this).css("box-shadow", "none")
+    }
+  )
 
-buttonFilter.addEventListener('click', () => {
-  const cards = document.querySelectorAll(".card-location")
-  cards.forEach((card) => {
-    const cidadeCard = card.querySelector(".location-card").textContent().toLowerCase();
-    const tipoCard = card.querySelector(".trash-type-card").textContent().toLowerCase();
+  $(".card-location").click(function () {
+    const locationTitle = $(this).find(".card-title").text()
+    const locationDescription = $(this).find(".card-description").text()
+    const locationCity = $(this).find(".location-card").text()
+    const locationTrashType = $(this).find(".trash-type-card").text()
 
-    if(cidade.value.toLowerCase != '') {
-      /* Todo */
+    $("#modal-location-title").text(locationTitle)
+    $("#modal-location-description").text(locationDescription)
+    $("#modal-location-city").text(locationCity)
+    $("#modal-location-trash-type").text(locationTrashType)
+
+    document.querySelector("#modal-location").showModal()
+    $("#fechar-modal-location").click(function () {
+      document.querySelector("#modal-location").close()
+    })
+  })
+
+  cep.addEventListener(`blur`, () => {
+    const cepValue = cep.value
+    city.value = ""
+    state.value = ""
+    district.value = ""
+    street.value = ""
+
+    if (validateForm()) {
+      getData(cepValue)
+        .then((data) => {
+          if (data.city) {
+            city.value = data.city
+            state.value = data.state
+            district.value = data.district
+            street.value = data.street
+          } else {
+            $.toast({
+              heading: "Aviso",
+              text: "Não foi possível encontrar o CEP.",
+              showHideTransition: "fade",
+              icon: "error",
+              position: "top-right", // Posição da notificação na tela.
+              bgColor: "#ff5722", // Cor de fundo da notificação.
+            })
+          }
+        })
+        .catch((error) => {
+          console.log(error)
+          alert("CEP não encontrado")
+        })
     }
   })
-})
+}
 
 const getData = async (cep) => {
   const url = `https://brasilaberto.com/api/v1/zipcode/${cep}`
@@ -265,34 +323,6 @@ const getData = async (cep) => {
   const data = await response.json()
   return data.result
 }
-
-const cep = document.querySelector(`#zip-code`)
-const city = document.querySelector(`#city`)
-const state = document.querySelector(`#state`)
-const district = document.querySelector(`#district`)
-const street = document.querySelector(`#street`)
-
-cep.addEventListener(`blur`, () => {
-  const cepValue = cep.value
-  city.value = ""
-  state.value = ""
-  district.value = ""
-  street.value = ""
-
-  if (validateForm()) {
-    getData(cepValue)
-      .then((data) => {
-        city.value = data.city
-        state.value = data.state
-        district.value = data.district
-        street.value = data.street
-      })
-      .catch((error) => {
-        console.log(error)
-        alert("CEP não encontrado")
-      })
-  }
-})
 
 const validateForm = () => {
   const nameInput = document.getElementById("name")
@@ -335,3 +365,96 @@ const validateForm = () => {
 
   return true
 }
+
+window.addEventListener("load", () => {
+  renderLocationCars()
+  aplicaFuncoesJquery()
+})
+
+input.addEventListener("keyup", () => {
+  const cards = document.querySelectorAll(".card-location")
+  const inputValue = input.value.toLowerCase()
+  cards.forEach((card) => {
+    const cardTitle = card
+      .querySelector(".card-title")
+      .textContent.toLocaleLowerCase()
+    if (cardTitle.includes(inputValue)) {
+      card.style.display = "flex"
+    } else {
+      card.style.display = "none"
+    }
+  })
+})
+
+function fechaModal() {
+  modal.close()
+  modal.style.display = "none"
+
+  const cards = document.querySelectorAll(".card-location")
+  cards.forEach((card) => {
+    card.style.display = "flex"
+  })
+
+  document.querySelector("#cities").value = "all"
+  document.querySelector("#type").value = "all"
+}
+
+modal.querySelector("#scroll-to-contact").addEventListener("click", fechaModal)
+
+fecharModalBtn.addEventListener("click", fechaModal)
+
+buttonFilter.addEventListener("click", () => {
+  const cards = document.querySelectorAll(".card-location")
+  const cidadeFiltro = document.querySelector("#cities").value
+  const tipoFiltro = document.querySelector("#type").value
+
+  let algumCartaoVisivel = false
+
+  cards.forEach((card) => {
+    if (cidadeFiltro.toLowerCase() != "all") {
+      const cidadeCard = formatarPalavra(
+        card.querySelector(".location-card").textContent.toLowerCase()
+      )
+      const tipoCard = formatarPalavra(
+        card.querySelector(".trash-type-card").textContent.toLowerCase()
+      )
+
+      if (tipoFiltro.toLowerCase() != "all") {
+        if (
+          cidadeCard.includes(cidadeFiltro) &&
+          tipoCard.includes(tipoFiltro)
+        ) {
+          card.style.display = "flex"
+          algumCartaoVisivel = true
+        } else {
+          card.style.display = "none"
+        }
+      } else {
+        if (cidadeCard.includes(cidadeFiltro)) {
+          card.style.display = "flex"
+          algumCartaoVisivel = true
+        } else {
+          card.style.display = "none"
+        }
+      }
+    } else if (tipoFiltro.toLowerCase() != "all") {
+      const tipoCard = formatarPalavra(
+        card.querySelector(".trash-type-card").textContent.toLowerCase()
+      )
+      if (tipoCard.includes(tipoFiltro)) {
+        card.style.display = "flex"
+        algumCartaoVisivel = true
+      } else {
+        card.style.display = "none"
+      }
+    } else {
+      card.style.display = "flex"
+      algumCartaoVisivel = true
+    }
+  })
+
+  if (!algumCartaoVisivel) {
+    modal.showModal()
+    modal.style.display = "flex"
+  }
+})
