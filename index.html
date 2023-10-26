@@ -286,7 +286,7 @@
               <label for="email" class="email"
                 >E-mail <span class="error-message"></span
               ></label>
-              <input type="text" name="email" id="email" />
+              <input type="email" name="email" id="email" />
             </div>
 
             <div class="form-group">
@@ -301,6 +301,10 @@
               <input type="text" name="street" id="street" />
             </div>
             <div class="form-group">
+              <label for="street">Número</label>
+              <input type="number" name="street" id="street" />
+            </div>
+            <div class="form-group">
               <label for="city">Cidade</label>
               <input type="text" name="city" id="city" />
             </div>
@@ -312,11 +316,27 @@
               <label for="state">Estado</label>
               <input type="text" name="state" id="state" />
             </div>
+
+            <div class="form-group">
+              <label for="tel">Telefone para contato</label>
+              <input type="tel" name="tel" id="tel" />
+            </div>
+            <div class="form-group">
+              <label for="range">Distância do ponto de coleta mais próximo</label>
+              <input type="range" name="range" id="range" min="10" max="50" step="2" value="10" /> <p><span class="kilometragem"></span>Km </p>
+            </div>
+            <div class="checkbox">
+              <label for="notify">Deseja receber novidades?</label>
+              <input type="checkbox" name="notify" id="notify" />
+            </div>
             <div class="form-group">
               <label for="message">Mensagem</label>
               <textarea name="message" id="message"></textarea>
             </div>
-            <button>Enviar</button>
+            <div class="botoes">
+              <input type="reset" value="Limpar" id="reset">
+              <button type="button">Enviar</button>
+            </div>
           </form>
         </div>
       </section>

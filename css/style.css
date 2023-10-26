@@ -552,7 +552,7 @@ main section {
   margin: 1rem;
 }
 
-#contato form .form-group label {
+#contato form .form-group label, #contato .checkbox label {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 0.5rem;
@@ -581,7 +581,7 @@ main section {
   max-height: 250px;
 }
 
-#contato form button {
+#contato form button, input[type="reset"] {
   margin-top: 1rem;
   padding: 0.5rem 1rem;
   border: none;
@@ -594,8 +594,37 @@ main section {
   transition: all 0.4s ease-in-out;
 }
 
+#contato .botoes {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+
+#contato input[type="reset"] {
+  background: none;
+  color: red;
+  border: 2px solid red;
+}
+
+#contato input[type="reset"]:hover {
+  background-color: red;
+  color: white;
+}
+
 #contato form button:hover {
   background-color: var(--color-7);
+}
+
+#contato .checkbox {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#contato .checkbox label {
+  align-self: auto;
 }
 
 @media (max-width: 910px) {

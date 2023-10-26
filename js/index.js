@@ -283,6 +283,29 @@ const aplicaFuncoesJquery = () => {
     })
   })
 
+  $('form button').hide()
+  $('form button').click(() => {
+    if (validateForm()) {
+      $.toast({
+        heading: "Sucesso!",
+        text: "Formulário enviado com sucesso! Aguarde nosso contato.",
+        showHideTransition: "fade",
+        icon: "success",
+        position: "top-right",
+      })
+      $("#email").val("")
+      $("#name").val("")
+      $("#zip-code").val("")
+      $("#message").val("")
+      city.value = ""
+      state.value = ""
+      district.value = ""
+      street.value = ""
+      $('form button').hide()
+
+    }
+  })
+
   cep.addEventListener(`blur`, () => {
     const cepValue = cep.value
     city.value = ""
@@ -291,6 +314,7 @@ const aplicaFuncoesJquery = () => {
     street.value = ""
 
     if (validateForm()) {
+      $('form button').show()
       getData(cepValue)
         .then((data) => {
           if (data.city) {
@@ -304,8 +328,8 @@ const aplicaFuncoesJquery = () => {
               text: "Não foi possível encontrar o CEP.",
               showHideTransition: "fade",
               icon: "error",
-              position: "top-right", // Posição da notificação na tela.
-              bgColor: "#ff5722", // Cor de fundo da notificação.
+              position: "top-right",
+              bgColor: "#ff5722",
             })
           }
         })
@@ -314,6 +338,17 @@ const aplicaFuncoesJquery = () => {
           alert("CEP não encontrado")
         })
     }
+  })
+
+  const range = document.querySelector("#range");
+  document.querySelector(".kilometragem").textContent = range.value;
+
+  range.addEventListener("input", () => {
+    document.querySelector(".kilometragem").textContent = range.value;
+  })
+
+  $("#reset").on("click", () => {
+    $(".kilometragem").text("10");
   })
 }
 
